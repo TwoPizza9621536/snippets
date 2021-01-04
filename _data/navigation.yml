@@ -1,0 +1,14 @@
+- name: Home
+  link: /
+- name: Repositories
+  link: /repositories
+- name: Blogs
+  link: /blogs/
+- name: Snippets
+  link: /snippets
+- name: Staff
+  link: /staff.html
+- name: About
+  link: /about
+- name: Contact
+  link: /about/contacts.html
