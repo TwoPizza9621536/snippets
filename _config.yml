@@ -18,11 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Sam W @TwoPizza9621536
+title: Snippets | Sam W @TwoPizza9621536
 email: twopizza9621536@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the site where you can see all of my repostory.
-  I may blog here but this is where I put about meself and my repos.
+  This is the page where the code snippets is store.
+  See the about page for the license for this repo.
   To see my GitHub profile go to https://github.com/TwoPizza9621536.
 baseurl: "/snippets" # the subpath of your site, e.g. /blog
 url: "https://twopizza9621536.github.io" # the base hostname & protocol for your site, e.g. http://example.com
