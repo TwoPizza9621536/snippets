@@ -5,3 +5,13 @@
 layout: home
 permalink: /index.html
 ---
+
+# Welcome
+
+This is a place where the snippets are stored for my blogs.
+
+## Languages
+
+## License
+
+The snippets are license under the MIT license. [Click here]({{ "/about" | relative_url }}) for more info.
