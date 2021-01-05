@@ -7,7 +7,7 @@ catagories: C
 This is a snippet for Syntax highlighting and comparing languages.
 Below is the snippet for C.
 
-{% highlight ruby linenos %}
+{% highlight cpp %}
 // Define any preprocessor header files
 #include <stdio.h>
 #include <stdlib.h>
@@ -42,4 +42,4 @@ int main(int argc, char **argv)
 }
 {% endhighlight %}
 
-[Click Here](assets/src/C/Printchara.c) to download the file.
+[Click Here]({{ "assets/src/C/Printchara.c" | relative_url }}) to download the file.
