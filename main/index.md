@@ -12,6 +12,20 @@ This is a place where the snippets are stored for my blogs.
 
 ## Languages
 
+[C]({{ "/C" | relative_url }})
+
+C++
+
+Java
+
+C#
+
+Kotlin
+
+Ruby
+
+Python
+
 ## License
 
 The snippets are license under the MIT license. [Click here]({{ "/about" | relative_url }}) for more info.

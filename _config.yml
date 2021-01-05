@@ -39,19 +39,25 @@ collections:
 
 defaults:
   - scope:
-      path: ""
-      type: "authors"
+      path: "src/C"
+      type: "Cfiles"
     values:
-      layout: "author"
+      layout: "C"
   - scope:
-      path: ""
-      type: "posts"
+      path: "src/C++"
+      type: "C++files"
     values:
-      layout: "post"
+      layout: "C++"
   - scope:
-      path: ""
+      path: "src/C#"
+      type: "C#files"
     values:
-      layout: "default"
+      layout: "C#"
+  - scope:
+      path: "src/Python"
+      type: "Pythonfiles"
+    values:
+      layout: "Python"
 
 # Build settings
 theme: jekyll-theme-cayman
