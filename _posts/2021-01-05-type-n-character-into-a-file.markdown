@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Type n character into a file
-catagory: C
+catagories: C
 ---
 
 This is a snippet for Syntax highlighting and comparing languages.
