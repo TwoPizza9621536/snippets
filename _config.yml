@@ -44,15 +44,15 @@ defaults:
     values:
       layout: "C"
   - scope:
-      path: "assets/src/C++"
-      type: "C++files"
+      path: "assets/src/CPP"
+      type: "CPPfiles"
     values:
-      layout: "C++"
+      layout: "CPP"
   - scope:
-      path: "assets/src/C#"
-      type: "C#files"
+      path: "assets/src/CSharp"
+      type: "CSharpfiles"
     values:
-      layout: "C#"
+      layout: "CSharp"
   - scope:
       path: "assets/src/Python"
       type: "Pythonfiles"

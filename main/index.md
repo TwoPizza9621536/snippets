@@ -20,7 +20,7 @@ Here all the languages in the repo.
 
 ### [C]({{ "/C" | relative_url }})
 
-### [C++]({{ "/C++" | relative_url }})
+### [C++]({{ "/C++" | url_encode | relative_url }})
 
 ### Java
 

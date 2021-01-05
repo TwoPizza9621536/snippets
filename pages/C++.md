@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /C++
+permalink: /C%2B%2B
 title: C++
 ---
 
@@ -11,9 +11,9 @@ title: C++
 For the C++ programing language here are the latest snippets.
 
 <ul>
-  {% for C++ in site.C++files %}
+  {% for CPP in site.CPPfiles %}
     <li>
-      [{{ C++.name }}]({{ C++.path }})
+      [{{ CPP.name }}]({{ CPP.path }})
     </li>
   {% endfor %}
 </ul>
