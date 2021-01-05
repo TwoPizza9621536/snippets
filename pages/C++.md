@@ -10,10 +10,4 @@ title: C++
 
 For the C++ programing language here are the latest snippets.
 
-<ul>
-  {% for CPP in site.CPPfiles %}
-    <li>
-      [{{ CPP.name }}]({{ CPP.path }})
-    </li>
-  {% endfor %}
-</ul>
+{% include lang.md %}
