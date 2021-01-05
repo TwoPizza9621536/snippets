@@ -1,6 +1,6 @@
 <ul>
   {% for post in site.posts %}
-    {% if post.catagory == page.title %}
+    {% if post.catagories == page.title %}
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
         {{ post.excerpt }}
