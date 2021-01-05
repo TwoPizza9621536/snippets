@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Type n character into a fileC
+title: Type n character into a file
 catagory: C
 ---
 
