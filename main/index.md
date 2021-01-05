@@ -8,24 +8,32 @@ permalink: /index.html
 
 # Welcome
 
+---
+
 This is a place where the snippets are stored for my blogs.
 
 ## Languages
 
-[C]({{ "/C" | relative_url }})
+Here all the languages in the repo.
 
-C++
+---
 
-Java
+### [C]({{ "/C" | relative_url }})
 
-C#
+### C++
 
-Kotlin
+### Java
 
-Ruby
+### C#
 
-Python
+### Kotlin
+
+### Ruby
+
+### Python
 
 ## License
+
+---
 
 The snippets are license under the MIT license. [Click here]({{ "/about" | relative_url }}) for more info.

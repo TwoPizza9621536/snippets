@@ -39,22 +39,22 @@ collections:
 
 defaults:
   - scope:
-      path: "src/C"
+      path: "assets/src/C"
       type: "Cfiles"
     values:
       layout: "C"
   - scope:
-      path: "src/C++"
+      path: "assets/src/C++"
       type: "C++files"
     values:
       layout: "C++"
   - scope:
-      path: "src/C#"
+      path: "assets/src/C#"
       type: "C#files"
     values:
       layout: "C#"
   - scope:
-      path: "src/Python"
+      path: "assets/src/Python"
       type: "Pythonfiles"
     values:
       layout: "Python"
