@@ -1,9 +1,9 @@
 {% for category in site.categories %}
+  {% if category[0] == page.tag %}
   <ul>
-    {% if category[1] == {{ page.title }} %}
-      {% for post in category[1] %}
-        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    {% endif %}
+    {% for post in category[1] %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+    {% endfor %}
   </ul>
+  {% endif %}
 {% endfor %}
