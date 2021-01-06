@@ -17,7 +17,7 @@ For the C programing language here are the latest snippets.
       {% for post in category[1] %}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
-    {endif}
+    {% endif %}
   </ul>
 {% endfor %}
 
