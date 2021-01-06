@@ -1,6 +1,7 @@
 ---
 layout: page
 title: C
+permalink: /c
 ---
 
 # C
