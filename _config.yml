@@ -52,11 +52,6 @@ defaults:
       path: ""
     values:
       layout: "default"
-  - scope:
-      path: ""
-      type: "snippets"
-    values:
-      layout: "snippet"
 
 # Build settings
 theme: jekyll-theme-cayman

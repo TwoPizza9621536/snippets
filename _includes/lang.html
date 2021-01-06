@@ -1,9 +1,9 @@
 <ul>
-  {% for snippet in site.snippets %}
-    {% if snippet.catagories == page.title %}
+  {% for post in site.posts %}
+    {% if post.catagories == page.title %}
       <li>
-        <a href="{{ snippet.url }}">{{ snippet.title }}</a>
-        {{ snippet.excerpt }}
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        {{ post.excerpt }}
       </li>
     {% endif %}
   {% endfor %}
