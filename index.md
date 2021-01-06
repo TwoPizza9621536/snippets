@@ -18,19 +18,15 @@ Here all the languages in the repo.
 
 ---
 
-### [C]({{ "/C" | relative_url }})
+{% for category in site.categories %}
+  <h3>{{ category[0] }}</h3>
+  <ul>
+    {% for post in category[1] %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
 
-### [C++]({{ "/C++" | url_encode | relative_url }})
-
-### Java
-
-### C#
-
-### Kotlin
-
-### Ruby
-
-### Python
 
 ## License
 
