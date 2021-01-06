@@ -20,6 +20,7 @@ Here all the languages in the repo.
 
 ### [C]({{ "/C" | relative_url }})
 
+### [C++]({{ "/C++" | encode_url | relative_url }})}
 
 ## License
 
