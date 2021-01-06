@@ -2,7 +2,7 @@
   {% for snippet in site.snippet %}
     {% if snippet.catagories == page.title %}
       <li>
-        <a href="{{ post.url }}">{{ snippet.title }}</a>
+        <a href="{{ snippet.url }}">{{ snippet.title }}</a>
         {{ snippet.excerpt }}
       </li>
     {% endif %}
