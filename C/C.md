@@ -1,7 +1,7 @@
 ---
 layout: page
 title: C
-permalink: /C.html
+permalink: /C
 tag: C
 ---
 

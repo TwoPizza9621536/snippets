@@ -6,7 +6,12 @@ title: Type n character into a file for C
 This is a snippet for Syntax highlighting and comparing languages.
 Below is the snippet for C.
 
-{% highlight cpp %}
+Depending on your OS you will need to change the
+file for press any key to continue.
+
+This file is for MSDOS/Windows.
+
+{% highlight c %}
 // Define any preprocessor header files
 #include <stdio.h>
 #include <stdlib.h>
