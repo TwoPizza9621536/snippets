@@ -24,6 +24,8 @@ Here all the languages in the repo.
 
 ### [C#]({{ "/C#" | relative_url }})
 
+### [Python]({{ "/Python" | relative_url }})
+
 ## License
 
 ---
