@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /C%2B%2B
+permalink: /C++
 title: C++
 tag: C++
 ---
