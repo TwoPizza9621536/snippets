@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Type n character into a file
+title: Type n character into a file for C
 ---
 
 This is a snippet for Syntax highlighting and comparing languages.
@@ -46,4 +46,4 @@ int main(int argc, char **argv)
 }
 {% endhighlight %}
 
-[Click Here]({{ "assets/src/C/Printchara.c" | relative_url }}) to download the file.
+[Click Here]({{ "assets/src/C/Printchara.c" | relative_url }}){:target="blank"} to download the file.

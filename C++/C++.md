@@ -2,6 +2,7 @@
 layout: page
 permalink: /C%2B%2B
 title: C++
+tag: C++
 ---
 
 # C++
