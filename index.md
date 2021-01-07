@@ -22,7 +22,7 @@ Here all the languages in the repo.
 
 ### [C++]({{ "/C++" | relative_url }})
 
-### [C#]({{ "/C#" | relative_url }})
+### [C#]({{ "/C%23" | relative_url }})
 
 ### [Python]({{ "/Python" | relative_url }})
 
