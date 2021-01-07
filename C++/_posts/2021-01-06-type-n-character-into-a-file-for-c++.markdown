@@ -4,7 +4,7 @@ title: Type n character into a file for C++
 ---
 
 This is a snippet for Syntax highlighting and comparing languages.
-Below is the snippet for C++.
+Below is the snippet for C.
 
 {% highlight cpp %}
 // Define any preprocessor header files
@@ -53,4 +53,4 @@ int main(int argc, char **argv)
 }
 {% endhighlight %}
 
-[Click Here]({{ "assets/src/CPlusPlus/Printchara.cpp" | relative_url }}){:target="top"} to download the file.
+[Click Here]({{ "assets/src/C++/Printchara.cpp" | relative_url }}){:target="blank"} to download the file.
