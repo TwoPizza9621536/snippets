@@ -29,11 +29,11 @@ int newnum = 0;
 // Fast Parsing without quiting
 while (!int.TryParse(num, out newnum))
 {
-    Console.WriteLine("Please enter a positive number:");
+    Console.WriteLine("Please enter a positive number: ");
     num = Console.ReadLine();
 }
 
-Console.WriteLine("What is the name for the file:");
+Console.WriteLine("What is the name for the file: ");
 string filename = Console.ReadLine();
 
 // Get directory and add the file name
@@ -43,13 +43,11 @@ string pathString = Path.Combine(currentDirName, filename);
 // Create a file and write to it then close it
 using (FileStream fs = File.Create(pathString))
 {
-
     for (int i = 0; i < newnum; i++)
     {
         fs.WriteByte((byte)'A');
     }
 }
-
 
 // If previous operation completed then press any key to exit
 Console.WriteLine("Operation Complete. Press any key to exit.");

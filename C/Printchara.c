@@ -5,9 +5,9 @@
 
 int main(int argc, char **argv)
 {
-    // Set varables
-    int num = 0;
-    char filename[23];
+// Set variables
+int num = 0;
+char filename[23];
 
     // Ask how many A's should be written
     // and the name of the file
