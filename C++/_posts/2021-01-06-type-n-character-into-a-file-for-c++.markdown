@@ -12,15 +12,15 @@ Below is the snippet for C.
 #include <fstream>
 #include <string>
 
-// define the standard libary unless you name
+// define the standard library unless you name
 // your function after std functions
 
 using namespace std;
 
 // Entry point
-int main(int argc, char **argv)
+int main(int argc, char \*\*argv)
 {
-    // Set varables
+    // Set variables
     int num = 0;
     string filename;
 
@@ -53,4 +53,4 @@ int main(int argc, char **argv)
 }
 {% endhighlight %}
 
-[Click Here]({{ "assets/src/C++/Printchara.cpp" | relative_url }}){:target="blank"} to download the file.
+[Click Here]({{ "assets/src/CPlusPlus/Printchara.cpp" | relative_url }}){:target="blank"} to download the file.

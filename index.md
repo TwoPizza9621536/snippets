@@ -26,6 +26,8 @@ Here all the languages in the repo.
 
 ### [Python]({{ "/Python" | relative_url }})
 
+### [Java]({{ "/Java" | relative_url }})
+
 ## License
 
 ---

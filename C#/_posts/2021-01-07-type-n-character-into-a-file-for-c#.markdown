@@ -14,6 +14,8 @@ using System.IO;
 // In CS9 you can write in the Top-level
 // below is the entry point
 
+// C# is a Java like language that is closer to Kotlin.
+
 /* namespace program
  * {
  *     public class myclass

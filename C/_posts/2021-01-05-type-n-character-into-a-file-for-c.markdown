@@ -19,7 +19,7 @@ This file is for MSDOS/Windows.
 
 int main(int argc, char **argv)
 {
-    // Set varables
+    // Set variables
     int num = 0;
     char filename[23];
 
@@ -44,7 +44,7 @@ int main(int argc, char **argv)
     fclose(fptr);
 
     // If previous operation completed then press any key to exit
-    printf("Operation Completed. Press Enter to exit.\n");
+    printf("Operation Completed. Press any to exit.\n");
     getchar();
 
     return 0;
