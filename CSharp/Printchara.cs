@@ -5,6 +5,8 @@ using System.IO;
 // In CS9 you can write in the Top-level
 // below is the entry point
 
+// C# is a Java like language that is closer to Kotlin.
+
 /* namespace program
  * {
  *     public class myclass
@@ -29,11 +31,11 @@ int newnum = 0;
 // Fast Parsing without quiting
 while (!int.TryParse(num, out newnum))
 {
-    Console.WriteLine("Please enter a positive number:");
+    Console.WriteLine("Please enter a positive number: ");
     num = Console.ReadLine();
 }
 
-Console.WriteLine("What is the name for the file:");
+Console.WriteLine("What is the name for the file: ");
 string filename = Console.ReadLine();
 
 // Get directory and add the file name
