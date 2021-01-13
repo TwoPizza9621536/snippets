@@ -5,9 +5,15 @@
 
 int main(int argc, char **argv)
 {
+<<<<<<< HEAD
     // Set variables
     int num = 0;
     char filename[23];
+=======
+// Set variables
+int num = 0;
+char filename[23];
+>>>>>>> 6e3657851870a5234ba1b22941a98a4d87e046de
 
     // Ask how many A's should be written
     // and the name of the file
@@ -30,7 +36,11 @@ int main(int argc, char **argv)
     fclose(fptr);
 
     // If previous operation completed then press any key to exit
+<<<<<<< HEAD
     printf("Operation Completed. Press any to exit.\n");
+=======
+    printf("Operation Completed. Press Enter to exit.\n");
+>>>>>>> 6e3657851870a5234ba1b22941a98a4d87e046de
     getchar();
 
     return 0;

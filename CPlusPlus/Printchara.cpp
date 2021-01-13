@@ -3,17 +3,17 @@
 #include <fstream>
 #include <string>
 
-// define the standard libary unless you name
+// define the standard library unless you name
 // your function after std functions
 
 using namespace std;
 
 // Entry point
-int main(int argc, char **argv)
+int main(int argc, char \*\*argv)
 {
-    // Set varables
-    int num = 0;
-    string filename;
+// Set variables
+int num = 0;
+string filename;
 
     // Ask how many A's should be written
     // and the name of the file
