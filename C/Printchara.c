@@ -1,7 +1,6 @@
 // Define any preprocessor header files
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
 
 int main(int argc, char **argv)
 {
@@ -15,7 +14,7 @@ int main(int argc, char **argv)
     scanf("%d", &num);
 
     printf("What is the name for the file: (Must be 20 characters excluding .txt): \n");
-    fgets(filename, sizeof(filename), stdin);
+    scanf("%s", filename);
 
     // Create a file and write to it then close it
     FILE *fptr;
@@ -31,7 +30,9 @@ int main(int argc, char **argv)
 
     // If previous operation completed then press any key to exit
     printf("Operation Completed. Press Enter to exit.\n");
-    getchar();
+    fflush(stdout);
+    while ( getchar() != '\n');
 
     return 0;
 }
+

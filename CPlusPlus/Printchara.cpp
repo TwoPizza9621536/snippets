@@ -9,7 +9,7 @@
 using namespace std;
 
 // Entry point
-int main(int argc, char \*\*argv)
+int main(int argc, char **argv)
 {
 // Set variables
 int num = 0;
@@ -36,9 +36,10 @@ string filename;
     file.close();
 
     // If previous operation completed then press any key to exit
-    cout << "Operation Completed. Press any key to exit." << endl;
-    cin.ignore();
+    cout << "Operation Completed. Press Enter to exit.";
     cin.get();
+    cin.ignore();
 
     return 0;
 }
+

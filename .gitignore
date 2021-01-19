@@ -5,3 +5,11 @@ _site/
 ./idea
 /shelf/
 /workspace.xml
+
+*
+!*.*
+!/**/
+
+*.txt
+.vscode
+
