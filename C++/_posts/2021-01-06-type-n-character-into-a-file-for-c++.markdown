@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Type n character into a file for C++
+slug: type-character-file-
+datemod: 2021-01-19 20:26:57 -0500
 ---
 
 This is a snippet for Syntax highlighting and comparing languages.
@@ -18,7 +20,7 @@ Below is the snippet for C.
 using namespace std;
 
 // Entry point
-int main(int argc, char \*\*argv)
+int main(int argc, char **argv)
 {
     // Set variables
     int num = 0;

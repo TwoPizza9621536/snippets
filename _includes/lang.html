@@ -3,7 +3,10 @@
   {% for post in category[1] %}
   <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
   <p class="author">
-    <span class="date">{{ post.date }}</span>
+    <span class="date">Creation Date:{{ post.date }}</span>
+    {% if post.datemod %}
+      <span class="date">Modified Date: {{ post.datemod }}</span>
+    {% endif %}
   </p>
   {% endfor %}
 </ul>
