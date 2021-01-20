@@ -20,7 +20,7 @@ Here all the languages in the repo.
 
 {% for item in site.data.language %}
 
-### [{{ item.name }}]({{ item.link }})
+### [{{ item.name }}]({{ item.link | relative_url }})
 
 {% endfor %}
 
