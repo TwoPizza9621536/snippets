@@ -4,7 +4,9 @@
   <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
   <p class="author">
     <span class="date">Creation Date:{{ post.date }}</span>
-    <span class="date">Modified Date: {{ post.datemod }}</span>
+    {% if post.datemod %}
+      <span class="date">Modified Date: {{ post.datemod }}</span>
+    {% endif %}
   </p>
   {% endfor %}
 </ul>
