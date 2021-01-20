@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <link rel="stylesheet" href="{{ '../assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" />
   </head>
   <body>
-    <div class="navigation">  
+    <div class="navigation">
       <nav>
         {% for item in site.data.navigation %}
           <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %} class="navigation-buttons">{{ item.name }}</a>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Type n character into a file for C
+moddate: 2021-01-20 10:11:43 -0500
 ---
 
 This is a snippet for Syntax highlighting and comparing languages.
@@ -9,7 +10,7 @@ Below is the snippet for C.
 Depending on your OS you will need to change the
 file for press any key to continue.
 
-This file is for MSDOS/Windows.
+This snippet is for MSDOS/Windows and the file is for Unix/Linux.
 
 {% highlight c %}
 // Define any preprocessor header files
@@ -17,6 +18,7 @@ This file is for MSDOS/Windows.
 #include <stdlib.h>
 #include <conio.h>
 
+// Entry Point
 int main(int argc, char **argv)
 {
     // Set variables
@@ -29,7 +31,7 @@ int main(int argc, char **argv)
     scanf("%d", &num);
 
     printf("What is the name for the file: (Must be 20 characters excluding .txt): \n");
-    fgets(filename, sizeof(filename), stdin);
+    scanf("%s", filename);
 
     // Create a file and write to it then close it
     FILE *fptr;

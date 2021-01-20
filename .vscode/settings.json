@@ -1,3 +1,6 @@
 {
-    "FSharp.suggestGitignore": false
+    "FSharp.suggestGitignore": false,
+    "python.linting.banditEnabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }
