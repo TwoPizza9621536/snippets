@@ -13,7 +13,7 @@ fun main() {
     // and the name of the file
     println("How many 'A' should be written to a file: ")
     val num = Integer.parseInt(readLine())
-    
+
     println("What is the name name for the file: ")
     val filename = readLine().toString()
 
