@@ -1,0 +1,14 @@
+- name: C
+  link: /C
+- name: C++
+  link: /C++
+- name: C#
+  link: /C#
+- name: Python
+  link: /Python
+- name: Java
+  link: /Java
+- name: Kotlin
+  link: /Kotlin
+- name: Rust
+  link: /Rust

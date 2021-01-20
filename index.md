@@ -18,15 +18,11 @@ Here all the languages in the repo.
 
 ---
 
-### [C]({{ "/C" | relative_url }})
+{% for item in site.data.language %}
 
-### [C++]({{ "/C++" | relative_url }})
+### [{{ item.name }}]({{ item.link }})
 
-### [C#]({{ "/C%23" | relative_url }})
-
-### [Python]({{ "/Python" | relative_url }})
-
-### [Java]({{ "/Java" | relative_url }})
+{% endfor %}
 
 ## License
 
