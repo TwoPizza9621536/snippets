@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Entry Point
 int main(int argc, char **argv)
 {
     // Set variables
@@ -35,4 +36,3 @@ int main(int argc, char **argv)
 
     return 0;
 }
-
