@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Type n character into a file for C#
+title: 'Type n character into a file for C#'
+slug: type-character-file-
 ---
 
 This is a snippet for Syntax highlighting and comparing languages.

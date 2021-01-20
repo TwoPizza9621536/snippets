@@ -3,6 +3,7 @@ layout: page
 title: Python
 permalink: /Python
 tag: Python
+slug: python
 ---
 
 # Python
