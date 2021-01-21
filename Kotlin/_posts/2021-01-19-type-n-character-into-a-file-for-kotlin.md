@@ -2,8 +2,12 @@
 layout: post
 title: Type n character into a file for Kotlin
 date: 2021-01-19 20:21:37 -0500
+moddate: 2021-01-20 19:31:04 -0500
 slug: type-character-file-kotlin
 ---
+
+This is a snippet for Syntax highlighting and comparing languages.
+Below is the snippet for Kotlin.
 
 {% highlight kotlin %}
 // Kotlin is compatible with Java
