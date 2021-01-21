@@ -1,19 +1,15 @@
-{% for category in site.categories %}
-    {% if category[0] == page.tag %}
-        <ul>
-            {% for post in category[1] %}
-                <li>
-                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                </li>
-                <p class="author">
-                    <span class="date">Creation Date:
-                        {{ post.date }}</span>
-                    {% if post.moddate %}
-                        <span class="date">Modification Date:
-                            {{ post.moddate }}</span>
-                    {% endif %}
-                </p>
-            {% endfor %}
-        </ul>
+{% for category in site.categories %} {% if category[0] == page.tag %}
+<ul>
+  {% for post in category[1] %}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  <p class="author">
+    <span class="date">Creation Date: {{ post.date }}</span>
+    {% if post.moddate %}
+    <span class="date">Modification Date: {{ post.moddate }}</span>
     {% endif %}
-{% endfor %}
+  </p>
+  {% endfor %}
+</ul>
+{% endif %} {% endfor %}
