@@ -6,9 +6,23 @@
   link: /C#
 - name: Python
   link: /Python
+- name: Common Lisp
+  link: /Lisp
+- name: Pascal
+  link: /Pascal
+- name: Fortran
+  link: /Fortran
 - name: Java
   link: /Java
 - name: Kotlin
   link: /Kotlin
 - name: Rust
   link: /Rust
+- name: Dart
+  link: /Dart
+- name: Go
+  link: /Go
+- name: Visual Basic (.Net)
+  link: /VB
+- name: Visual Basic (Applications)
+  link: /VBA
