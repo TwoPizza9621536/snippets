@@ -19,52 +19,37 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-// Define any preprocessor header files
-#include <iostream>
-#include <fstream>
-#include <string>
+package main
 
-/**
- * define the standard library unless you name
- * your function after std functions or
- * using namespace std is confusing with other
- * functions.
- * I recommend not using 'using namespace std;'
- */
+import (
+    "fmt"
+    "os"
+    "path/filepath"
+    "bufio"
+    "log"
+    "strconv"
+)
 
-using namespace std;
+func main()  {
+    reader := bufio.NewReader(os.Stdin)
 
-// Entry point
-int main(int argc, char **argv)
-{
-// Set variables
-    int num = 0;
-    string filename;
+    fmt.Println("How many 'A' should be written to a file: ")
+    num, _ := reader.ReadString('\n')
 
-    // Ask how many A's should be written
-    // and the name of the file
-    cout << "How many 'A' should be written to a file: " << endl;
-    cin >> num;
+    newnum, _ := strconv.ParseInt(num, 10, 64)
 
-    cout << "What is the name for the file: " << endl;
-    cin >> filename;
+    fmt.Println("What is the name for the file: ")
+    filename, _ := reader.ReadString('\n')
 
-    // Create a file and write to it then close it
-    ofstream file;
-
-    file.open(filename);
-
-    for (int i = 0; i < num; i++)
-    {
-        file << 'A';
+    fullpath := filepath.Base(filename)
+    file, err := os.Create(fullpath)
+    if err != nil {
+        log.Fatal(err)
     }
 
-    file.close();
-
-    // If previous operation completed then press any key to exit
-    cout << "Operation Completed. Press Enter to exit.";
-    cin.get();
-    cin.ignore();
-
-    return 0;
+    var i int64
+    for i = 0; i < newnum; i++ {
+        file.WriteString("A")
+    }
+    file.Close()
 }

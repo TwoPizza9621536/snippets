@@ -19,48 +19,37 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-// Kotlin is compatible with Java
-// Import modules if needed
-import java.io.File
-import java.io.IOException
-import java.io.RandomAccessFile
-import java.nio.ByteBuffer
-import java.nio.file.Paths
+// import modules if needed
+import 'dart:core';
+import 'dart:io';
+
+// import 'package:print_chara/print_chara.dart' as print_chara;
 
 // Entry point
-fun main() {
-    // Unlike Java and like C#, Kotlin has it's own input method
+void main() {
     // Ask how many A's should be written
     // and the name of the file
-    println("How many 'A' should be written to a file: ")
-    val num = Integer.parseInt(readLine())
+    // Dart is C and javascript like language.
 
-    println("What is the name for the file: ")
-    val filename = readLine().toString()
+    print("How many 'A' should be written to a file: ");
+    var num = stdin.readLineSync();
 
-    // Get directory and add the file name
-    val currentDirName = System.getProperty("user.dir")
-    val rootPath = Paths.get(currentDirName)
-    val filePath = Paths.get(filename)
-    val pathString = rootPath.resolve(filePath)
+    var newnum = int.parse(num);
+    assert(newnum is int);
+
+    print('What is the name for the file: ');
+    var filename = stdin.readLineSync();
 
     // Create a file and write to it then close it
-    val fs = File(pathString.toString())
-    try(val stream = RandomAccessFile(fs, "rw")) {
-        val channel = stream.channel
-        val character = "A"
-        for (i in 0 until num) {
-            val strByte = character.toByteArray()
-            val buffer = ByteBuffer.allocate(strByte.size)
-            buffer.put(strByte)
-            buffer.flip()
-            channel.write(buffer)
-        }
-    } catch (e: IOException) {
-        e.printStackTrace()
+    // The writing process is similar to Java/Kotlin
+    var file = File(filename);
+    var stream = file.openWrite();
+    for (var i = 0; i < newnum; i++) {
+        stream.writeCharCode(65);
     }
+    stream.close();
 
     // If previous operation completed then press any key to exit
-    println("Operation Complete. Press Enter to exit.")
-    readLine()
+    print('Complete. Press Enter to exit.');
+    stdin.readLineSync();
 }
