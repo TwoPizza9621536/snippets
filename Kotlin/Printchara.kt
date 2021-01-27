@@ -1,3 +1,24 @@
+/**
+ * Copyright (c) 2021 Sam W
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of
+ * this software and associated documentation files (the "Software"), to deal in
+ * the Software without restriction, including without limitation the rights to
+ * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+ * the Software, and to permit persons to whom the Software is furnished to do so,
+ * subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+ * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+ * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
 // Kotlin is compatible with Java
 // Import modules if needed
 import java.io.File
@@ -14,7 +35,7 @@ fun main() {
     println("How many 'A' should be written to a file: ")
     val num = Integer.parseInt(readLine())
 
-    println("What is the name name for the file: ")
+    println("What is the name for the file: ")
     val filename = readLine().toString()
 
     // Get directory and add the file name
@@ -25,8 +46,7 @@ fun main() {
 
     // Create a file and write to it then close it
     val fs = File(pathString.toString())
-    try {
-        val stream = RandomAccessFile(fs, "rw")
+    try(val stream = RandomAccessFile(fs, "rw")) {
         val channel = stream.channel
         val character = "A"
         for (i in 0 until num) {
@@ -36,8 +56,6 @@ fun main() {
             buffer.flip()
             channel.write(buffer)
         }
-        stream.close()
-        channel.close()
     } catch (e: IOException) {
         e.printStackTrace()
     }

@@ -1,4 +1,5 @@
-"""
+
+(*
 Copyright (c) 2021 Sam W
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -17,33 +18,35 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-"""
+*)
 
-# Define modules if needed
+Program Printchara;
 
-# Python does not need an entry point below is the main
+Type
+  TestFilePrint = Test
+    t_chara: char;
+End;
 
-# if __name__ == "__main__":
-# execute only if run as a script
-# main()
+Var
+  num: integer;
+  filename: string;
+  fileprint: TestFilePrint;
+  f: file Of TestFilePrint;
 
-# Ask how many A's should be written
-# and the name of the file
+Begin
+  writeln('How many "A" should be written to a file');
+  readln(num);
 
-print("How many 'A' should be written to a file: ")
-num = input()
+  writeln('What is the name for the file: ');
+  readln(filename)
 
-print("What is the name for the file: ")
-filename = input()
+  assign(f, filename);
+  rewrite(f);
+  fileprint.t_chara := 'A';
 
-# Create a file and write to it then close it
-with open(filename, 'w+') as f:
-    for i in range (int(num)):
-        f.write('A')
-        i = i + 1
+  For i := 0 To num Do
+    Begin
+      write(f,fileprint)
+    End;
 
-f.close()
-
-# If previous operation completed then press Enter to exit
-print("Operation Completed. Press Enter to exit.")
-input()
+End.
