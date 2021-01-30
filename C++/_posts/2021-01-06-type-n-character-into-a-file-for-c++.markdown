@@ -55,4 +55,5 @@ int main(int argc, char **argv)
 }
 {% endhighlight %}
 
-[Click Here]({{ "assets/src/CPlusPlus/Printchara.cpp" | relative_url }}){:target="blank"} to download the file.
+[Click Here]({{ "../assets/src/CPlusPlus/Printchara.cpp" | relative_url }}){:target="blank"}
+to download the file.
