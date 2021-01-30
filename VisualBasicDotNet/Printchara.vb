@@ -50,7 +50,7 @@ Module Printchara
 
         ' Get directory and add the file name
         Dim currentDirName As String = Directory.GetCurrentDirectory()
-        Dim pathString As Path = Path.Combine(currentDirName, filename)
+        Dim pathString As String = Path.Combine(currentDirName, filename)
 
         ' Create a file and write to it then close it
         Using fs As Filestream = File.Create(pathString)
