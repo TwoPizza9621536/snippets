@@ -18,11 +18,11 @@
   link: /Kotlin
 - name: Rust
   link: /Rust
+- name: R
+  link: /R
 - name: Dart
   link: /Dart
-- name: Go
-  link: /Go
 - name: Visual Basic (.Net)
   link: /VB
-- name: Visual Basic (Applications)
-  link: /VBA
+- name: Basic
+  link: /Basic
