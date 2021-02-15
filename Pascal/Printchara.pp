@@ -49,4 +49,6 @@ Begin
       write(f,fileprint)
     End;
 
+    writeln('Operation Completed. Press Enter to exit.')
+    readln()
 End.

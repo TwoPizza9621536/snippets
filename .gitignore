@@ -13,3 +13,5 @@ _site/
 *.exe
 .fake
 .ionide
+.idea/
+
