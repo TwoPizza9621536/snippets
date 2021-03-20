@@ -2,6 +2,7 @@
 @import "rouge-github";
 @import "variables";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css);
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
@@ -223,18 +224,24 @@ a {
 
   code {
     padding: 2px 4px;
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.9rem;
     color: $code-text-color;
     background-color: $code-bg-color;
     border-radius: 0.3rem;
   }
 
+  @supports (font-variation-settings: normal) {
+    code {
+      font-family: 'Fira Code VF', monospace;
+    }
+  }
+
   pre {
     padding: 0.8rem;
     margin-top: 0;
     margin-bottom: 1rem;
-    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font: 1rem 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
     color: $code-text-color;
     word-wrap: normal;
     background-color: $code-bg-color;
