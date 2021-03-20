@@ -224,7 +224,7 @@ a {
 
   code {
     padding: 2px 4px;
-    font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: "Fira Code", Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.9rem;
     color: $code-text-color;
     background-color: $code-bg-color;
@@ -233,7 +233,7 @@ a {
 
   @supports (font-variation-settings: normal) {
     code {
-      font-family: 'Fira Code VF', monospace;
+      font-family: "Fira Code VF", monospace;
     }
   }
 
@@ -241,7 +241,7 @@ a {
     padding: 0.8rem;
     margin-top: 0;
     margin-bottom: 1rem;
-    font: 1rem 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font: 1rem "Fira Code", Consolas, "Liberation Mono", Menlo, Courier, monospace;
     color: $code-text-color;
     word-wrap: normal;
     background-color: $code-bg-color;
