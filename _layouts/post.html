@@ -2,20 +2,10 @@
 layout: default
 ---
 
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css"
->
-
 <h2>{{ page.title }}</h2>
 
 <p>
-    Blog created:
-    {{ page.date | date_to_string }}
-    |
-    {% if page.moddate %}Blog updated:
-        {{ page.moddate | date_to_string }}
-    {% endif %}
+    Blog created: {{ page.date | date_to_string }} | {% if page.moddate %}Blog updated: {{ page.moddate | date_to_string }}{% endif %}
     {% assign author = site.authors | where: 'short_name', page.author | first %}
     {% if author %}
         -
@@ -24,22 +14,4 @@ layout: default
 </p>
 
 {{ content }}
-
-<p>
-    The font is Fira Code. See the
-    <a href="{{ '/about' | relative_url }}">about page</a>
-    for more info.
-</p>
-
-<style type="text/css">
-code {
-  font-family: 'Fira Code', monospace;
-}
-
-@supports (font-variation-settings: normal) {
-  code {
-    font-family: 'Fira Code VF', monospace;
-  }
-}
-</style>
-
+ 
