@@ -34,7 +34,7 @@ void main() {
     print("How many 'A' should be written to a file: ");
     var num = stdin.readLineSync();
 
-    var newnum = int.parse(num);
+    var newnum = int.parse(num!);
     assert(newnum is int);
 
     print('What is the name for the file: ');
@@ -42,7 +42,7 @@ void main() {
 
     // Create a file and write to it then close it
     // The writing process is similar to Java/Kotlin
-    var file = File(filename);
+    var file = File(filename!);
     var stream = file.openWrite();
     for (var i = 0; i < newnum; i++) {
         stream.writeCharCode(65);
