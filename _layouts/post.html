@@ -2,6 +2,11 @@
 layout: default
 ---
 
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css"
+>
+
 <h2>{{ page.title }}</h2>
 
 <p>
@@ -25,3 +30,16 @@ layout: default
     <a href="{{ '/about' | relative_url }}">about page</a>
     for more info.
 </p>
+
+<style type="text/css">
+code {
+  font-family: 'Fira Code', monospace;
+}
+
+@supports (font-variation-settings: normal) {
+  code {
+    font-family: 'Fira Code VF', monospace;
+  }
+}
+</style>
+
