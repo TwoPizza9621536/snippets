@@ -39,10 +39,8 @@ fun main() {
     val filename = readLine().toString()
 
     // Get directory and add the file name
-    val currentDirName = System.getProperty("user.dir")
-    val rootPath = Paths.get(currentDirName)
-    val filePath = Paths.get(filename)
-    val pathString = rootPath.resolve(filePath)
+    val rootPath = Paths.get(System.getProperty("user.dir"))
+    val pathString = rootPath.resolve(Paths.get(filename))
 
     // Create a file and write to it then close it
     val fs = File(pathString.toString())
