@@ -4,7 +4,8 @@ title: About
 permalink: /about/
 ---
 
-The license for this site is under CC-BY 4.0. For other licenses [click here]().
+The license for this site is under CC-BY 4.0. For other additional premission
+[click here]({{ '../about' | relative_url }}).
 
 The snippets are licensed under MIT. Below is the license.
 
