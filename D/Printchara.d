@@ -21,24 +21,14 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-// Define any preprocessor header files
-#include <iostream>
-#include <fstream>
-#include <string>
+// Import the standard library components
+// This is the similar to c/c++ and alike
+// languages
+import std.stdio;
+import std.string;
+import std.file;
 
-/**
- * define the standard library unless you name
- * your function after std functions or
- * using namespace std is confusing with other
- * functions.
- * I recommend not using 'using namespace std;'
- * for the reasons above.
- */
-
-using namespace std;
-
-// Entry point
-int main(int argc, char **argv)
+void main()
 {
     // Set variables
     int num = 0;
@@ -46,27 +36,20 @@ int main(int argc, char **argv)
 
     // Ask how many A's should be written
     // and the name of the file
-    cout << "How many 'A' should be written to a file: " << endl;
-    cin >> num;
+    writeln("How many 'A' should be written to a file: ");
+    readf(" %d\n", &num);
 
-    cout << "What is the name for the file: " << endl;
-    cin >> filename;
+    writeln("What is the name for the file: ");
+    readf(" %s\n", &filename);
 
     // Create a file and write to it then close it
-    ofstream file;
-
-    file.open(filename);
+    File file = File(filename, "w");
 
     for (int i = 0; i < num; i++)
     {
-        file << 'A';
+        file.write('A');
     }
 
-    file.close();
-
-    // If previous operation completed then press any key to exit
-    cout << "Operation Completed. Press Enter to exit.";
-    cin.get();
-
-    return 0;
+    writeln("Operation Completed. Press Enter to exit.");
+    readln();
 }

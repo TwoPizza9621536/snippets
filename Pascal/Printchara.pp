@@ -1,4 +1,5 @@
-
+(* SPDX-FileCopyrightText: Copyright (c) 2021 Sam W *)
+(* SPDX-License-Identifier: MIT *)
 (*
 Copyright (c) 2021 Sam W
 

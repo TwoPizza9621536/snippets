@@ -1,3 +1,5 @@
+' SPDX-FileCopyrightText: Copyright (c) 2021 Sam W
+' SPDX-License-Identifier: MIT
 ' Copyright (c) 2021 Sam W
 '
 ' Permission is hereby granted, free of charge, to any person obtaining a copy of
