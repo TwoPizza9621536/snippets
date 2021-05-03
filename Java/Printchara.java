@@ -46,8 +46,8 @@ public class Main {
         String filename = input.nextLine();
 
         // Get directory and add the file name
-        Path rootPath = Paths.get(System.getProperty("user.dir"));
-        Path filePath = Paths.get(filename);
+	Path rootPath = Paths.get(System.getProperty("user.dir"));
+	Path filePath = Paths.get(filename);
 
         // Create a file and write to it then close it
         File fs = new File(String.valueOf(pathString));
