@@ -55,4 +55,3 @@ int main(int argc, char **argv)
 
 [Click Here]({{ "../assets/src/C/Printchara.c" | relative_url }}){:target="blank"}
 to download the file.
-
