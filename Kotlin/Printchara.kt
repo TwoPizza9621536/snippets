@@ -40,12 +40,38 @@ fun main() {
     println("What is the name for the file: ")
     val filename = readLine().toString()
 
-    // Get directory and add the file name
-    val currentDirName = System.getProperty("user.dir")
-    val rootPath = Paths.get(currentDirName)
-    val filePath = Paths.get(filename)
-    val pathString = rootPath.resolve(filePath)
+    // Ask how many A's should be written
+    // and the name of the file
+    println("How many 'A' should be written to a file: ")
+    val num = Integer.parseInt(readLine())
 
+    println("What is the name for the file: ")
+    val filename = readLine().toString()
+
+    // Get directory and add the file name
+    val rootPath = Paths.get(System.getProperty("user.dir"))
+    val pathString = rootPath.resolve(Paths.get(filename))
+
+    // Create a file and write to it then close it
+    val fs = File(pathString.toString())
+    try(val stream = RandomAccessFile(fs, "rw")) {
+        val channel = stream.channel
+        val character = "A"
+        for (i in 0 until num) {
+            val strByte = character.toByteArray()
+            val buffer = ByteBuffer.allocate(strByte.size)
+            buffer.put(strByte)
+            buffer.flip()
+            channel.write(buffer)
+        }
+    } catch (e: IOException) {
+        e.printStackTrace()
+    }
+
+    // If previous operation completed then press any key to exit
+    println("Operation Complete. Press Enter to exit.")
+    readLine()
+}
     // Create a file and write to it then close it
     val fs = File(pathString.toString())
     try(val stream = RandomAccessFile(fs, "rw")) {
