@@ -4,27 +4,25 @@
   link: /C++
 - name: C#
   link: /C#
-- name: Python
-  link: /Python
-- name: Common Lisp
-  link: /Lisp
-- name: Pascal
-  link: /Pascal
+- name: D
+  link: /D
+- name: Dart
+  link: /Dart
 - name: Fortran
   link: /Fortran
 - name: Java
   link: /Java
 - name: Kotlin
   link: /Kotlin
+- name: Pascal
+  link: /Pascal
+- name: Python
+  link: /Python
+- name: Swift
+  link: /Swift
 - name: Rust
   link: /Rust
 - name: R
   link: /R
-- name: Dart
-  link: /Dart
 - name: Visual Basic (.Net)
   link: /VB
-- name: Basic
-  link: /Basic
-- name: Swift
-  link: /Swift
