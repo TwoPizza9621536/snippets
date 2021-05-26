@@ -8,7 +8,7 @@ To see the website is under CC BY-SA 4.0, [click here to learn more][1].
 Licensed under the MIT License
 
 ```
-Copyright (c) 2021 Sam W
+Copyright (c) 2021 Samuel Wu
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
